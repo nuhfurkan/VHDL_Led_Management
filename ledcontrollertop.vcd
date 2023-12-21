@@ -1,0 +1,48 @@
+$date
+  Thu Dec 21 15:12:30 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module std_logic_arith $end
+$upscope $end
+$scope module std_logic_unsigned $end
+$upscope $end
+$scope module led_controller_top $end
+$var reg 1 ! clk $end
+$var reg 1 " ldr_signal $end
+$var reg 1 # led_output $end
+$scope module led_controller_inst $end
+$var reg 1 $ clk $end
+$var reg 1 % ldr_signal $end
+$var reg 1 & led_output $end
+$var integer 32 ' timer $end
+$var reg 1 ( led_on $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+U#
+0$
+0%
+U&
+b0 '
+0(
+#500000000000000
+1!
+1#
+1$
+1&
+b1 '
+#1000000000000000
+0!
+0$
