@@ -17,7 +17,7 @@ begin
   begin
     if rising_edge(CLK) then
       if LDR_Signal = '0' then -- No light detected 
-        if timer < 10000000 then  -- turn on LED for 10 seconds (10 million steps)
+        if timer < 100000 then  -- turn on LED for 10 seconds (1 million steps)
           LED_Output <= '1';
           timer <= timer + 1;
         else
@@ -28,6 +28,8 @@ begin
         LED_Output <= '0';
         timer <= 0;
       end if;
+    else
+      LED_Output <= '0';
     end if;
   end process;
 

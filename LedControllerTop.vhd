@@ -6,8 +6,8 @@ end LED_Controller_Top;
 
 architecture Behavioral of LED_Controller_Top is
   signal CLK       : std_logic := '0';
-  signal LDR_Signal: std_logic := '0';
-  signal LED_Output: std_logic;
+  signal LDR_Signal: std_logic := '1';
+  signal LED_Output: std_logic := '1';
 
   component LED_Controller
     Port ( CLK         : in  std_logic;
@@ -25,7 +25,7 @@ begin
 
   process
   begin
-    wait for 500 ms;
+    wait for 10 us;
     CLK <= not CLK;
   end process;
 
